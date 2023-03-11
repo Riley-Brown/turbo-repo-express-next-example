@@ -1,0 +1,17 @@
+{
+  "name": "@example/logger",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "source": "./index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "lint": "eslint . --quiet"
+  },
+  "dependencies": {
+    "pino": "8.10.0",
+    "eslint-config-example": "workspace:*"
+  },
+  "devDependencies": {
+    "pino-pretty": "9.2.0"
+  }
+}
