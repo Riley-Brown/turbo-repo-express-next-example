@@ -1,0 +1,24 @@
+{
+  "name": "turbo-repo-express-next-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean & rm -rf node_modules",
+    "dev": "cross-env FORCE_COLOR=1 turbo run dev --no-cache --parallel",
+    "lint": "turbo run lint",
+    "start": "turbo run start",
+    "test": "cross-env FORCE_COLOR=1 turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "dependencies": {
+    "turbo": "1.8.3"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

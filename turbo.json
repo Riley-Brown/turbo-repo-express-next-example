@@ -1,0 +1,42 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "NODE_ENV",
+    "PORT",
+    "IS_SERVER_BUILD"
+  ],
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "dist/**"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": false
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "typecheck": {
+      "outputs": [
+        "tsconfig.tsbuildinfo"
+      ]
+    },
+    "test": {
+      "outputs": []
+    }
+  }
+}
