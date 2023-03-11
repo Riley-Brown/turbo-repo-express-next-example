@@ -1,0 +1,16 @@
+{
+  "name": "@example/utils",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "source": "./index.ts",
+  "scripts": {
+    "clean": "rm -rf turbo && rm -rf node_modules",
+    "lint": "eslint . --quiet"
+  },
+  "dependencies": {
+    "@example/logger": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-config-example": "workspace:*"
+  }
+}
