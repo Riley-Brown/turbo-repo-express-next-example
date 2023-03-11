@@ -1,6 +1,13 @@
 import express from 'express'
 import logger from '@example/logger'
 
+import { test, anotherOne } from '@example/utils'
+import oneMore from '@example/utils/anotherUtil'
+
+test('server')
+anotherOne()
+oneMore()
+
 const app = express()
 
 app.get('/', (req, res) => {
