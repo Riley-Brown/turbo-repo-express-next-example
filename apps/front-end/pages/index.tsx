@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import logger from '@example/logger'
 import styles from 'styles/Home.module.css'
-
-logger.info('Hello from the front-end!')
 
 const inter = Inter({ subsets: ['latin'] })
 
