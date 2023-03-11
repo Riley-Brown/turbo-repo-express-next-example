@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entry: ['./index.ts'],
-  noExternal: ['@example'], // Bundle all packages and their dependencies
+  noExternal: ['@example'], // Bundle any package starting with `@example` and their dependencies
   splitting: false,
   bundle: true,
   outDir: './dist',
